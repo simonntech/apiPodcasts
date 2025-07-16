@@ -34,7 +34,7 @@ RESPONSE:
             videoId: "FyP7-KMq17M",
             cover: "https://i.ytimg.com/vi/FyP7-KMq17M/maxresdefault.jpg",
             link: "https://www.youtube.com/watch?v=FyP7-KMq17M",
-            category: ["humor", "política"]
+            categories: ["humor", "política"]
         },
         {
             podcastName: "Podcast 3 irmãos",
@@ -42,7 +42,7 @@ RESPONSE:
             videoId: "heJcy-ItTz8",
             cover: "https://i.ytimg.com/vi/heJcy-ItTz8/maxresdefault.jpg",
             link: "https://www.youtube.com/watch?v=heJcy-ItTz8",
-            category: ["debate", "política"]
+            categories: ["debate", "política"]
         }
 
     ]

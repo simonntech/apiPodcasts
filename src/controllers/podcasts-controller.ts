@@ -1,25 +1,14 @@
 import { IncomingMessage, ServerResponse } from 'http';
+import { serviceListEpisodes } from '../services/list-episodes-service';
 
+export const getListEpisodes = async (
+    req: IncomingMessage,
+    res: ServerResponse
+) => {
+    const content = await serviceListEpisodes();
 
-export const getListEpisodes = async (req: IncomingMessage, res: ServerResponse) => {
     res.writeHead(200, { 'content-type': "application/json" });
     res.end(
-        JSON.stringify(
-            [
-                {
-                    podcastName: "Podcast 3 irmãos",
-                    episode: "RUI COSTA PIMENTA - COMUNISMO RAIZ - PODCAST 3 IRMÃOS #785",
-                    videoId: "FyP7-KMq17M",
-                    category: ["humor", "politica"]
-                },
-                {
-                    podcastName: "Podcast 3 irmãos",
-                    episode: "JOSÉ KOBORI e JONES MANOEL - PODCAST 3 IRMÃOS #780",
-                    videoId: "heJcy-ItTz8",
-                    category: ["debate", "politica"]
-                }
-
-            ]
-        )
+        JSON.stringify(content)
     )
 }
