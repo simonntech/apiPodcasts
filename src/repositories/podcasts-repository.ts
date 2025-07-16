@@ -1,12 +1,20 @@
 import fs from "fs"; //pacote FILE SYSTEM do próprio NODE JS
 import path from "path"; // pacote PATH
-import { Podcast } from "../models/podcast-model";
+import { PodcastModel } from "../models/podcast-model";
 
 const pathData = path.join(__dirname, "../repositories/podcasts.json");
 
-export const repoPodcast = async () : Promise <Podcast[]> => {
+export const repoPodcast = async (
+    podcastName?: string
+): Promise<PodcastModel[]> => {
     const rawData = fs.readFileSync(pathData, "utf-8");
-    const jsonFile = JSON.parse(rawData);
+    let jsonFile = JSON.parse(rawData);
+
+    if (podcastName) {
+        jsonFile = jsonFile.filter(
+            (podcast:PodcastModel) => podcast.podcastName === podcastName
+        );
+    }
 
     return jsonFile;
 }

@@ -47,3 +47,6 @@ RESPONSE:
 
     ]
     ```
+
+### Feature:
+GET: Retorna lista de episódio baseado em um parâmetro enviado pelo cliente do nome do podcast:
