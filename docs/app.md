@@ -29,21 +29,11 @@ RESPONSE:
     ```js
     [
         {
-            podcastName: "Podcast 3 irmãos",
-            episode: "RUI COSTA PIMENTA - COMUNISMO RAIZ - PODCAST 3 IRMÃOS #785",
-            videoId: "FyP7-KMq17M",
-            cover: "https://i.ytimg.com/vi/FyP7-KMq17M/maxresdefault.jpg",
-            link: "https://www.youtube.com/watch?v=FyP7-KMq17M",
-            categories: ["humor", "política"]
-        },
-        {
-            podcastName: "Podcast 3 irmãos",
-            episode: "JOSÉ KOBORI e JONES MANOEL - PODCAST 3 IRMÃOS #780",
-            videoId: "heJcy-ItTz8",
-            cover: "https://i.ytimg.com/vi/heJcy-ItTz8/maxresdefault.jpg",
-            link: "https://www.youtube.com/watch?v=heJcy-ItTz8",
-            categories: ["debate", "política"]
-        }
+            podcastName: "Nome do podcast",
+            episode: "Episódio Podcast",
+            videoId: "endereço do vídeo, onde vai ter o link e capa",
+            categories: ["vetor de categorias"]
+        }...
 
     ]
     ```
