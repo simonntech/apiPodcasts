@@ -11,7 +11,7 @@ export const app = async (
 ) => {
 
     // QueryString => texto que vai mandar para a variável para ser usado de parâmetro
-    const [baseUrl, queryString] = request.url?.split("?") ?? [""];
+    const baseUrl = request.url?.split("?") [0];
 
     // listar podcasts
     if (request.method === HttpMethod.GET && baseUrl === Routes.LIST) {
