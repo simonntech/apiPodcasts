@@ -16,5 +16,14 @@
             "debate",
             "politica"
         ]
+    },
+    {
+            "podcastName": "Flow",
+            "episode": "LUIZA HELENA TRAJANO - Flow #469",
+            "videoId": "dYmPkpw7d2s",
+            "categories": [
+            "empreendimento",
+            "tecnologia"
+        ]
     }
 ]
