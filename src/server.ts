@@ -4,14 +4,17 @@ import {getFilterEpisodes, getListEpisodes} from './controllers/podcasts-control
 //criando servidor
 const server = http.createServer(
     async (req: http.IncomingMessage, res: http.ServerResponse) => {
+
+        // QueryString => texto que vai mandar para a variável para ser usado de parâmetro
+        const [baseUrl, queryString] = req.url?.split("?") ?? [""];
         
         // listar podcasts
-        if(req.method === "GET" && req.url === "/api/list") {
+        if(req.method === "GET" && baseUrl === "/api/list") {
             await getListEpisodes(req, res);
         }
 
         // listar por nome
-        if(req.method === "GET" && req.url === "/api/episode") {
+        if(req.method === "GET" && baseUrl === "/api/episode") {
             await getFilterEpisodes(req, res);
         }
 });
