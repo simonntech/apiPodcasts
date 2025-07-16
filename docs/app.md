@@ -1,6 +1,6 @@
 (estudo de API do curso do Felipão da DIO)
 # Aplicativo - API Gerenciador Podcast
-Projeto com NodeJS puro, sem biblioteca de terceiros ou frameworks
+Projeto com NodeJS puro e Typescript, sem biblioteca de terceiros ou frameworks
 
 ### Domínio
 Podcasts feito em vídeo
